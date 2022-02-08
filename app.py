@@ -682,110 +682,110 @@ those suffering from illnesses caused by exposure to air pollution.""")
         if st.checkbox("Show station wise Data"):
             st.markdown("**Station 1**")
             st.write(station1.head())
-            import base64
-            import io
-            towrite = io.BytesIO()
-            downloaded_file = station1.to_csv(towrite, encoding='utf-8', index=False, header=True) # write to BytesIO buffer
-            towrite.seek(0)  # reset pointer
-            b64 = base64.b64encode(towrite.read()).decode() 
-            linko= f'<a href="data:application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;base64,{b64}" download="station1.csv">Download csv file</a>'
-            st.markdown(linko, unsafe_allow_html=True)
+            #import base64
+            #import io
+            #towrite = io.BytesIO()
+            #downloaded_file = station1.to_csv(towrite, encoding='utf-8', index=False, header=True) # write to BytesIO buffer
+            #towrite.seek(0)  # reset pointer
+            #b64 = base64.b64encode(towrite.read()).decode() 
+            #linko= f'<a href="data:application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;base64,{b64}" download="station1.csv">Download csv file</a>'
+            #st.markdown(linko, unsafe_allow_html=True)
             
             st.markdown("**Station 2**")
             
             st.write(station2.head())
-            import base64
-            import io
-            towrite = io.BytesIO()
-            downloaded_file = station2.to_csv(towrite, encoding='utf-8', index=False, header=True) # write to BytesIO buffer
-            towrite.seek(0)  # reset pointer
-            b64 = base64.b64encode(towrite.read()).decode() 
-            linko= f'<a href="data:application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;base64,{b64}" download="station2.csv">Download csv file</a>'
-            st.markdown(linko, unsafe_allow_html=True)
+            #import base64
+            #import io
+            #towrite = io.BytesIO()
+            #downloaded_file = station2.to_csv(towrite, encoding='utf-8', index=False, header=True) # write to BytesIO buffer
+            #towrite.seek(0)  # reset pointer
+            #b64 = base64.b64encode(towrite.read()).decode() 
+            #linko= f'<a href="data:application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;base64,{b64}" download="station2.csv">Download csv file</a>'
+            #st.markdown(linko, unsafe_allow_html=True)
             
             st.markdown("**Station 3**")
             
             st.write(station3.head())
-            import base64
-            import io
-            towrite = io.BytesIO()
-            downloaded_file = station3.to_csv(towrite, encoding='utf-8', index=False, header=True) # write to BytesIO buffer
-            towrite.seek(0)  # reset pointer
-            b64 = base64.b64encode(towrite.read()).decode() 
-            linko= f'<a href="data:application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;base64,{b64}" download="station3.csv">Download csv file</a>'
-            st.markdown(linko, unsafe_allow_html=True)
+            #import base64
+            #import io
+            #towrite = io.BytesIO()
+            #downloaded_file = station3.to_csv(towrite, encoding='utf-8', index=False, header=True) # write to BytesIO buffer
+            #towrite.seek(0)  # reset pointer
+            #b64 = base64.b64encode(towrite.read()).decode() 
+            #linko= f'<a href="data:application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;base64,{b64}" download="station3.csv">Download csv file</a>'
+            #st.markdown(linko, unsafe_allow_html=True)
                         
             st.markdown("**Station 4**")
             
             st.write(station4.head())
-            import base64
-            import io
-            towrite = io.BytesIO()
-            downloaded_file = station4.to_csv(towrite, encoding='utf-8', index=False, header=True) # write to BytesIO buffer
-            towrite.seek(0)  # reset pointer
-            b64 = base64.b64encode(towrite.read()).decode() 
-            linko= f'<a href="data:application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;base64,{b64}" download="station4.csv">Download csv file</a>'
-            st.markdown(linko, unsafe_allow_html=True)
+            #import base64
+            #import io
+            #towrite = io.BytesIO()
+            #downloaded_file = station4.to_csv(towrite, encoding='utf-8', index=False, header=True) # write to BytesIO buffer
+            #towrite.seek(0)  # reset pointer
+            #b64 = base64.b64encode(towrite.read()).decode() 
+            #linko= f'<a href="data:application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;base64,{b64}" download="station4.csv">Download csv file</a>'
+            #st.markdown(linko, unsafe_allow_html=True)
 
             st.markdown("**Station 5**")
             
             st.write(station5.head())
-            import base64
-            import io
-            towrite = io.BytesIO()
-            downloaded_file = station5.to_csv(towrite, encoding='utf-8', index=False, header=True) # write to BytesIO buffer
-            towrite.seek(0)  # reset pointer
-            b64 = base64.b64encode(towrite.read()).decode() 
-            linko= f'<a href="data:application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;base65,{b64}" download="station5.csv">Download csv file</a>'
-            st.markdown(linko, unsafe_allow_html=True)
+            #import base64
+            #import io
+            #towrite = io.BytesIO()
+            #downloaded_file = station5.to_csv(towrite, encoding='utf-8', index=False, header=True) # write to BytesIO buffer
+            #towrite.seek(0)  # reset pointer
+            #b64 = base64.b64encode(towrite.read()).decode() 
+            #linko= f'<a href="data:application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;base65,{b64}" download="station5.csv">Download csv file</a>'
+            #st.markdown(linko, unsafe_allow_html=True)
             
             st.markdown("**Station 6**")
             
             st.write(station6.head())
-            import base64
-            import io
-            towrite = io.BytesIO()
-            downloaded_file = station6.to_csv(towrite, encoding='utf-8', index=False, header=True) # write to BytesIO buffer
-            towrite.seek(0)  # reset pointer
-            b64 = base64.b64encode(towrite.read()).decode() 
-            linko= f'<a href="data:application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;base66,{b64}" download="station6.csv">Download csv file</a>'
-            st.markdown(linko, unsafe_allow_html=True)
+            #import base64
+            #import io
+            #towrite = io.BytesIO()
+            #downloaded_file = station6.to_csv(towrite, encoding='utf-8', index=False, header=True) # write to BytesIO buffer
+            #towrite.seek(0)  # reset pointer
+            #b64 = base64.b64encode(towrite.read()).decode() 
+            #linko= f'<a href="data:application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;base66,{b64}" download="station6.csv">Download csv file</a>'
+            #st.markdown(linko, unsafe_allow_html=True)
             
             st.markdown("**Station 7**")
             
             st.write(station7.head())
-            import base64
-            import io
-            towrite = io.BytesIO()
-            downloaded_file = station7.to_csv(towrite, encoding='utf-8', index=False, header=True) # write to BytesIO buffer
-            towrite.seek(0)  # reset pointer
-            b64 = base64.b64encode(towrite.read()).decode() 
-            linko= f'<a href="data:application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;base66,{b64}" download="station7.csv">Download csv file</a>'
-            st.markdown(linko, unsafe_allow_html=True)
+            #import base64
+            #import io
+            #towrite = io.BytesIO()
+            #downloaded_file = station7.to_csv(towrite, encoding='utf-8', index=False, header=True) # write to BytesIO buffer
+            #towrite.seek(0)  # reset pointer
+            #b64 = base64.b64encode(towrite.read()).decode() 
+            #linko= f'<a href="data:application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;base66,{b64}" download="station7.csv">Download csv file</a>'
+            #st.markdown(linko, unsafe_allow_html=True)
                         
             st.markdown("**Station 8**")
             
             st.write(station8.head())
-            import base64
-            import io
-            towrite = io.BytesIO()
-            downloaded_file = station8.to_csv(towrite, encoding='utf-8', index=False, header=True) # write to BytesIO buffer
-            towrite.seek(0)  # reset pointer
-            b64 = base64.b64encode(towrite.read()).decode() 
-            linko= f'<a href="data:application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;base66,{b64}" download="station8.csv">Download csv file</a>'
-            st.markdown(linko, unsafe_allow_html=True)
+            #import base64
+            #import io
+            #towrite = io.BytesIO()
+            #downloaded_file = station8.to_csv(towrite, encoding='utf-8', index=False, header=True) # write to BytesIO buffer
+            #towrite.seek(0)  # reset pointer
+            #b64 = base64.b64encode(towrite.read()).decode() 
+            #linko= f'<a href="data:application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;base66,{b64}" download="station8.csv">Download csv file</a>'
+            #st.markdown(linko, unsafe_allow_html=True)
 
             st.markdown("**Station 9**")
             
             st.write(station9.head())
-            import base64
-            import io
-            towrite = io.BytesIO()
-            downloaded_file = station9.to_csv(towrite, encoding='utf-8', index=False, header=True) # write to BytesIO buffer
-            towrite.seek(0)  # reset pointer
-            b64 = base64.b64encode(towrite.read()).decode() 
-            linko= f'<a href="data:application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;base66,{b64}" download="station9.csv">Download csv file</a>'
-            st.markdown(linko, unsafe_allow_html=True)
+            #import base64
+            #import io
+            #towrite = io.BytesIO()
+            #downloaded_file = station9.to_csv(towrite, encoding='utf-8', index=False, header=True) # write to BytesIO buffer
+            #towrite.seek(0)  # reset pointer
+            #b64 = base64.b64encode(towrite.read()).decode() 
+            #linko= f'<a href="data:application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;base66,{b64}" download="station9.csv">Download csv file</a>'
+            #st.markdown(linko, unsafe_allow_html=True)
             
             st.subheader(""" We got all the station data """)
             
