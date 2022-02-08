@@ -11,16 +11,6 @@ dataFrameSerialization = "legacy"
 
 
 
-[client]
-caching = true
-showErrorDetails = true
-
-[server]
-fileWatcherType = "auto"
-enableXsrfProtection = true
-runOnSave = true
-maxUploadSize = 200
-maxMessageSize = 200
 
 
 
