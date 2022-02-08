@@ -8,7 +8,12 @@ font = "sans serif"
 [global]
 dataFrameSerialization = "legacy"
 
-
+[server]
+fileWatcherType = "auto"
+enableXsrfProtection = true
+runOnSave = true
+maxUploadSize = 200
+maxMessageSize = 200
 
 
 
