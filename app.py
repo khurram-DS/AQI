@@ -292,7 +292,7 @@ def main():
     Average_day = Average_day.dropna(how='any',axis=0)
     column_names = ['Date','Station','CO', 'NO', 'NO2', 'NOx', 'O3', 'PM10', 'SO2', 'PM10_24hr_avg','SO2_24hr_avg', 'NOx_24hr_avg', 'NO2_1hr_avg', 'CO_8hr_max','O3_8hr_max', 'PM10_AQI', 'SO2_AQI', 'NOx_AQI','NO2_AQI', 'CO_AQI', 'O3_AQI', 'Checks','Combined_AQI','AQI_bucket_calculated']
     Average_day = Average_day.reindex(columns=column_names)
-    @st.cache(allow_output_mutation=True)
+    
     
     
     
@@ -667,6 +667,7 @@ those suffering from illnesses caused by exposure to air pollution.""")
             towrite = io.BytesIO()
             downloaded_file = dsub.to_csv(towrite, encoding='utf-8', index=False, header=True) # write to BytesIO buffer
             towrite.seek(0)  # reset pointer
+            @st.cache(allow_output_mutation=True)
             b64 = base64.b64encode(towrite.read()).decode() 
             linko= f'<a href="data:application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;base64,{b64}" download="combined_AQI.csv">Download csv file</a>'
             st.markdown(linko, unsafe_allow_html=True)
