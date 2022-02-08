@@ -12,7 +12,7 @@ dataFrameSerialization = "legacy"
 fileWatcherType = "auto"
 enableXsrfProtection = true
 runOnSave = true
-maxUploadSize = 500
+maxUploadSize = 200
 maxMessageSize = 500
 
 
