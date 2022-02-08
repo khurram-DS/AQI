@@ -662,15 +662,15 @@ those suffering from illnesses caused by exposure to air pollution.""")
                
             
             st.subheader('Combined Pollutant AQI')
-            import base64
-            import io
-            towrite = io.BytesIO()
-            downloaded_file = dsub.to_csv(towrite, encoding='utf-8', index=False, header=True) # write to BytesIO buffer
-            towrite.seek(0)  # reset pointer
+            #import base64
+            #import io
+            #towrite = io.BytesIO()
+            #downloaded_file = dsub.to_csv(towrite, encoding='utf-8', index=False, header=True) # write to BytesIO buffer
+            #towrite.seek(0)  # reset pointer
             
-            b64 = base64.b64encode(towrite.read()).decode() 
-            linko= f'<a href="data:application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;base64,{b64}" download="combined_AQI.csv">Download csv file</a>'
-            st.markdown(linko, unsafe_allow_html=True)
+            #b64 = base64.b64encode(towrite.read()).decode() 
+            #linko= f'<a href="data:application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;base64,{b64}" download="combined_AQI.csv">Download csv file</a>'
+            #st.markdown(linko, unsafe_allow_html=True)
             st.write(dsub.head())
         st.text('© ASIA Consulting 2022')    
     elif choice == "Station wise Data":
