@@ -641,7 +641,7 @@ those suffering from illnesses caused by exposure to air pollution.""")
     
             st.image(image, caption="Formula to be applied in concetration table",width=600)
                 
-            st.markdown("""** Procedure applied to obtain AQI **
+            st.markdown("""**Procedure applied to obtain AQI**
                             
     1.Formula to be applied for PM10 by taking 24 hour average data. 
     
@@ -669,7 +669,7 @@ those suffering from illnesses caused by exposure to air pollution.""")
             towrite.seek(0)  # reset pointer
             b64 = base64.b64encode(towrite.read()).decode() 
             linko= f'<a href="data:application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;base64,{b64}" download="combined_AQI.csv">Download csv file</a>'
-            St.markdown(linko, unsafe_allow_html=True)
+            st.markdown(linko, unsafe_allow_html=True)
             st.write(dsub.head())
         st.text('© ASIA Consulting 2022')    
     elif choice == "Station wise Data":
