@@ -401,10 +401,10 @@ those suffering from illnesses caused by exposure to air pollution.""")
         
     elif choice == "Data interpretation":
         st.subheader("Data Interpretation")
-        #from PIL import Image
+        from PIL import Image
         #image = Image.open('static/raw.jpg')
 
-        #st.image(image, caption="Raw Data Interpretation",width=650)
+        st.image("https://thumbs.gfycat.com/BlackandwhiteTenderBuzzard-size_restricted.gif", caption="Raw Data Interpretation",width=650)
         
         if st.checkbox('Show Raw Data Information'):
             st.subheader('Raw Data')
