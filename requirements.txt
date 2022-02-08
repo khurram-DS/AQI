@@ -1,4 +1,4 @@
-Flask==1.1.1
+
 gunicorn==19.9.0
 itsdangerous==1.1.0
 Jinja2==2.10.1
@@ -15,10 +15,10 @@ pingouin==0.5.0
 plotly==5.4.0
 py==1.10.0
 seaborn==0.11.1
-streamlit==1.2.0
+streamlit==1.5.0
 xlrd<2.0
 openpyxl==3.0.0
-chart-studio==1.0.0
+
 
 
 
