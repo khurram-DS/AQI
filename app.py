@@ -401,14 +401,14 @@ those suffering from illnesses caused by exposure to air pollution.""")
         
     elif choice == "Data interpretation":
         st.subheader("Data Interpretation")
-        from PIL import Image
+        """from PIL import Image
         image = Image.open('static/raw.jpg')
 
         st.image(image, caption="Raw Data Interpretation",width=650)
         
         if st.checkbox('Show Raw Data Information'):
             st.subheader('Raw Data')
-            st.write(df.head())
+            st.write(df.head())"""
             
             st.markdown("""**Features Details(Column Details)**""")
             
